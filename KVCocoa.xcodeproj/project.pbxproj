@@ -10,6 +10,8 @@
 		81CB72AC21142A14000B0BBC /* KVCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CB72A221142A14000B0BBC /* KVCocoa.framework */; };
 		81CB72B121142A14000B0BBC /* KVCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB72B021142A14000B0BBC /* KVCocoaTests.swift */; };
 		81CB72B321142A14000B0BBC /* KVCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 81CB72A521142A14000B0BBC /* KVCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81CB72BD21142A5B000B0BBC /* KVCocoaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB72BC21142A5B000B0BBC /* KVCocoaFile.swift */; };
+		81CB72BF21142C18000B0BBC /* KVCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 81CB72BE21142C18000B0BBC /* KVCocoa.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		81CB72AB21142A14000B0BBC /* KVCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CB72B021142A14000B0BBC /* KVCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVCocoaTests.swift; sourceTree = "<group>"; };
 		81CB72B221142A14000B0BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81CB72BC21142A5B000B0BBC /* KVCocoaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVCocoaFile.swift; sourceTree = "<group>"; };
+		81CB72BE21142C18000B0BBC /* KVCocoa.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KVCocoa.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		81CB729821142A14000B0BBC = {
 			isa = PBXGroup;
 			children = (
+				81CB72BE21142C18000B0BBC /* KVCocoa.podspec */,
 				81CB72A421142A14000B0BBC /* KVCocoa */,
 				81CB72AF21142A14000B0BBC /* KVCocoaTests */,
 				81CB72A321142A14000B0BBC /* Products */,
@@ -73,6 +78,7 @@
 			children = (
 				81CB72A521142A14000B0BBC /* KVCocoa.h */,
 				81CB72A621142A14000B0BBC /* Info.plist */,
+				81CB72BC21142A5B000B0BBC /* KVCocoaFile.swift */,
 			);
 			path = KVCocoa;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					81CB72A121142A14000B0BBC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					81CB72AA21142A14000B0BBC = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -177,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CB72BF21142C18000B0BBC /* KVCocoa.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CB72BD21142A5B000B0BBC /* KVCocoaFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +348,7 @@
 		81CB72B721142A14000B0BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "HP-Enterprise.KVCocoa";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +374,7 @@
 		81CB72B821142A14000B0BBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -387,6 +399,7 @@
 		81CB72BA21142A14000B0BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KVCocoaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +417,7 @@
 		81CB72BB21142A14000B0BBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KVCocoaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
